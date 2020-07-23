@@ -10,3 +10,4 @@ def sales_reports(log_file):
 
 
 sales_reports(log_file)
+log_file.close()
