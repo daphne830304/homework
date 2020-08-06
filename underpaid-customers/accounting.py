@@ -66,7 +66,7 @@ def orders(filename):
         i = i.split('|')
         name = i[1]
         expected = float(i[2])*melon_cost
-        paid = i[3]
+        paid = float(i[3])
         if expected != paid:
-            print(f"{name} paid ${paid}",f"expected ${expected}")
+            print(f"{name} paid ${paid:.2f}",f"expected ${expected:.2f}")
 orders("customer-orders.txt")
